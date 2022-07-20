@@ -13,32 +13,32 @@
     border-radius: 50px;
 }
 
-.fa-solid{
+
+.search{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar{
-    background-image: url(img/img1.jpg);
+.nav-item a{
+    color: white;
 }
-
 #about{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    padding: 20px;
+    flex-wrap: wrap;
 }
 #about img{
-    width:400px;
-    height: 300px;
+    width: 50%;
+    width:500px;
+    height: 400px;
 }
 .text{
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
     justify-content: space-between;
 }
 #carouselExampleCaptions img{
@@ -54,6 +54,8 @@
 }
 div.section-title{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items:center;
     margin: 10px;
@@ -67,6 +69,7 @@ div.section-subtitle{
 
 .opp-cards{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -81,11 +84,13 @@ div.section-subtitle{
 .cards{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .cards .card{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .cards .card .card-img-top{
     width: 300px;
@@ -93,6 +98,13 @@ div.section-subtitle{
 }
 .cards .card .card-body p{
     font-size: 24px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .btn{
     padding: 10px;
@@ -179,15 +191,18 @@ button{
     grid-gap: 1px;
     align-items: start;
     justify-items: center;
-    }
-  .grid img {
+}
+
+.grid img {
     max-width: 100%;
-  }
-  .grid img:hover{
+}
+
+.grid img:hover{
     opacity:0.8;
-  }
-  .grid img:nth-child(2) {
+}
+
+.grid img:nth-child(2) {
     grid-column: span 3;
     grid-row: span 3;
-    }
+}
 
