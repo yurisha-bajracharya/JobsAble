@@ -114,6 +114,7 @@ h1{
     text-align: center;
     margin:10px;
 }
+
 .footer{
     background: #333;
     color: #fff;
@@ -169,4 +170,24 @@ button{
 
 .form{
     background-color: rgb(228, 241, 246);
+    margin: 100px;
 }
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    align-items: start;
+    justify-items: center;
+    }
+  .grid img {
+    max-width: 100%;
+  }
+  .grid img:hover{
+    opacity:0.8;
+  }
+  .grid img:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 3;
+    }
+
