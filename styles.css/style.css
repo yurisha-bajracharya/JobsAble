@@ -6,13 +6,20 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
 }
-
+.navbar{
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+}
 .navbar img{
     width: 70px;
     height: 70px;
     border-radius: 50px;
 }
-
+a{
+    text-decoration: none;
+}
 
 .search{
     display: flex;
@@ -20,10 +27,12 @@
     align-items: center;
 }
 
-.nav-item a{
-    color: white;
+.dropdown-item{
+    color: black;
 }
 #about{
+    margin-top: 50px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +50,11 @@
     justify-content: center;
     justify-content: space-between;
 }
+.text button{
+    width: 20%;
+}
 #carouselExampleCaptions img{
-    height: 600px;
+    height: 620px;
 }
 
 #activities{
@@ -52,6 +64,11 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+#activities img{
+    display: flex;
+    width: 50%;
+}
+
 div.section-title{
     display: flex;
     flex-direction: column;
