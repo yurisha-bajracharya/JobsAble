@@ -96,9 +96,9 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/img2.jpg" class="d-block w-100" alt="" />
+          <img src="img/c.jpg" class="d-block w-100" alt="" />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Home Tutoring</h5>
+            <h5>Tutoring</h5>
             <p>A disabled spreading knowledge</p>
           </div>
         </div>
@@ -139,8 +139,8 @@
     We work with the moto: <strong>Sharing is Caring!</strong><br>
     We, at JobsAble, understand how difficult it can be for people to get employed especially when one is differently abled. So here is the solution! You'll get all the necessary information about available jobs, requirements for you. You can even personalize your needs. 
     <br>
-    Happy Working! <br>
-    <button type="button" class="btn btn-light">Log In</button>
+    Happy Working! <br><br>
+    <button type="button" class="btn btn-secondary">Log In</button>
 </div>
 
 <div class="img">
@@ -161,7 +161,7 @@
         <div class="card-body">
           <h3 class="card-title">Asakta Janachetana Abhiyan</h3>
           <p class="card-text">We, the members at JobsAble, conducted an awareness campaign to inform about the existing opportunites for differently abled people in Nepal.</p>
-          <a href="#" class="btn btn-primary">Details</a>
+          <a href="#" class="btn btn-secondary">Details</a>
         </div>
       </div>
       <div class="card" style="width: 100%;">
@@ -169,7 +169,7 @@
         <div class="card-body">
           <h3 class="card-title">Inter-school Poetry Competition</h3>
           <p class="card-text">JobsAble organized a school level poetry competition with the help of the school itself on the topic "Differently Abled: More abled" where in students recited poems out of their creativity for differently abled people.</p>
-          <a href="#" class="btn btn-primary">Details</a>
+          <a href="#" class="btn btn-secondary">Details</a>
         </div>
       </div>
       <div class="card" style="width: 100%;">
@@ -177,7 +177,7 @@
         <div class="card-body">
           <h3 class="card-title">Local Job Knowledge</h3>
           <p class="card-text">We organized a program called 'Local Job Knowledge' for the people at rural areas to get informed about the jobs available locally for them.</p>
-          <a href="#" class="btn btn-primary">Details</a>
+          <a href="#" class="btn btn-secondary">Details</a>
         </div>
       </div>
     </section>
@@ -339,80 +339,122 @@
     </div>
   </section>
     <!-- Contact -->
-    <h1>Contact Us</h1>
     <section class="form" id="contact">
-        <div class="mb-3">
-                <label for="exampleInputName1" class="form-label">Name</label>
-                <input type="text" class="form-control" required placeholder="enter name">
-                <div id="emailHelp" class="form-text">Please enter your full name.</div>
+    <h1>Contact Us</h1><br>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-<input type="email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
         </div>
-        <div class="mb-3" required>
-          <label for="exampleInputConcern1" class="form-label">Concern</label>
-          <input type="text" class="form-control" placeholder="Please mention your concern">
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
         </div>
-        Do you want to subscribe to our daily news feed? If so, checkmark the box belox. <br>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Count Me In!</label>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">City</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form></section>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">State</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Province 1</option>
+          <option>Province 2</option>
+          <option>Province 3</option>
+          <option>Province 4</option>
+          <option>Province 5</option>
+          <option>Province 6</option>
+          <option>Province 7</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Concern</label>
+        <input type="text" class="form-control" id="validationCustom05" required placeholder="Please mention your concern">
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+ </section>
+        
       <section class="location">
         <h1>Our Location</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433.38.916141051027!2d85.35624337320894!3d27.780120372354858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1c215b344979%3A0x4605357b8e37ae15!2sBudhanilkantha%20School!5e0!3m2!1sen!2snp!4v1658302279592!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <!-- footer -->
-      <footer class="footer" id="#footer">
-        <div class="footer-container">
-            <div>
-                  <ul class="social-icons">
-                    <li class="social-list">
-                        <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                    </li>
-                    <li class="social-list">
-                        <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                    </li>
-                    <li class="social-list">
-                        <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                           <div class="contact-item">
-                    <span>
-                        <i class="fas fa-map-marker-alt"></i>
-                    </span>
-                    <span>
-                        Manamaiju, Kathmandu
-                    </span>
-                </div>
-                <div class="contact-item">
-                    <span>
-                        <i class="fas fa-phone-alt"></i>
-                    </span>
-                    <span>
-                        +977 9800000000
-                    </span>
-                </div>
-                <div class="contact-item">
-                    <span>
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span>
-                        pkhatiwada58@gmail.com
-                    </span>
-                </div>
-            </div>
-        </div>
-    <div class="end"><h1 class="credit">Copyright&copy;<span> Binary Bombers</span> | all rights reserved </h1></div>
-    </footer>
-  </section>
+      <footer class="footer" id="footer">
+        <h1 class="section__title" id="contact">Connect with Us</h1>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://www.google.com/" target="_blank" class="social-list__link">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.google.com/" target="_blank" class="social-list__link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.google.com/"  target="_blank" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.google.com/"  target="_blank" class="social-list__link">
+                    <i class="fab fa-medium-m"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.google.com/  target="_blank" class="social-list__link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.google.com/"  target="_blank" class="social-list__link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+        Location: Budhanilkantha, Kathmandu
+        <div class="end"><div class="credit">Copyright &copy;<span> Binary Bombers</span> | All rights reserved </div></div>
+</footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

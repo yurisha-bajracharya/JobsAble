@@ -93,6 +93,9 @@ div.section-subtitle{
     margin: 30px;
     padding: 20px;
 }
+.card:hover{
+    opacity: 0.7;
+}
 
 .right{
     display: flex;
@@ -144,25 +147,7 @@ h1{
     margin:10px;
 }
 
-.footer{
-    background: #333;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-}
 
-.footer-container{
-    width: 85vw;
-    margin: auto;
-    padding: 30px 0;
-}
-.footer-container p, .footer-container a, .footer-container span{
-    opacity: 0.8;
-}
-.footer a{
-    display: block;
-    color: #fff;
-    text-decoration: none;}
 
 ul li{
     list-style-type: none;
@@ -181,15 +166,9 @@ iframe{
     width: 70%;
     height: 100h;
 }
-.social-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
 
 #contact{
-    margin: 30px;
+    margin: 50px;
     padding: 20px;
 }
 button{
@@ -199,7 +178,6 @@ button{
 
 .form{
     background-color: rgb(228, 241, 246);
-    margin: 100px;
 }
 
 .grid { 
@@ -216,6 +194,7 @@ button{
 
 .grid img:hover{
     opacity:0.8;
+    cursor: pointer;
 }
 
 .grid img:nth-child(2) {
@@ -223,3 +202,38 @@ button{
     grid-row: span 3;
 }
 
+/* Footer */
+.footer {
+    background: var(--clr-dark-accent);
+    background-color: rgb(172, 168, 168);
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer a {
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
+/* Social Links */
+.social-list__link:hover {
+    color: var(--clr-accent);
+    opacity: .5;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item a {
+    margin: 0 0.5em;
+    color: var(--clr-accent);
+
+}
+/* Social Links End*/
